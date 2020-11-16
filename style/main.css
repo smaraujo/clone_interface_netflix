@@ -1,0 +1,139 @@
+:root{
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: #fff;
+}
+header .container{
+    display: flex;
+    flex-direction: row; /*default*/
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+   
+}
+
+/* Elementos Base*/
+.filme-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa-lost.jpg');
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+    position: relative;
+}
+
+.filme-principal .descricao{
+    margin: 10px 0  90px 0px;
+}
+
+.filme-principal .titulo{
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin-top: 13%;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.botao:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width:100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
+
+/* adicionais*/
+.link-item-carrocel{
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    opacity: 1;
+}
+.link-item-carrocel:hover{
+    opacity: 0.7;
+  }
+
+  .text-middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  
+  
+  .link-item-carrocel:hover .text-middle {
+    opacity: 1;
+  }
+  
+  .text-link-item-carrocel{
+    background-color:var(--vermelho);
+    color:#fff;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+    
